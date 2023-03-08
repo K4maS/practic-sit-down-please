@@ -1,0 +1,101 @@
+@import "mixins";
+@import "_vars";
+@import "grid";
+
+.hero {
+    margin-bottom: 68px;
+
+    .container {
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 8px);
+
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: var(--swiper-pagination-bottom, 19px);
+    }
+
+    .swiper-pagination-bullet {
+        width: 14px;
+        height: 14px;
+        margin: 0 8px;
+        background: #333333;
+        opacity: 0.3;
+
+        &-active {
+            opacity: 1;
+        }
+    }
+
+    &__block {
+        background-color: #F7F7F7;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__block-1 {
+        background-image: url("./img/hero__bg-1.jpg");
+    }
+
+    &__block-2 {
+        background-image: url("./img/hero__bg-2.jpg");
+    }
+
+    &__block-3 {
+        background-image: url("./img/hero__bg-3.jpg");
+    }
+
+    &__block-error {
+        background-color: #F7F7F7;
+
+        .container {
+            align-items: center;
+        }
+
+
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 49px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 65px;
+        color: #999999;
+    }
+
+    &__btn {
+
+        padding: 20px 48px;
+        color: #FFFFFF;
+        background: #A65CF0;
+
+    }
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        width: 276px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        color: #999999;
+    }
+}

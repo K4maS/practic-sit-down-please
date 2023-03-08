@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Regular"), url("../fonts/OpenSansRegular.woff2") format("woff2"), url("../fonts/OpenSansRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-SemiBold"), url("../fonts/OpenSansSemiBold.woff2") format("woff2"), url("../fonts/OpenSansSemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Bold"), url("../fonts/OpenSansBold.woff2") format("woff2"), url("../fonts/OpenSansBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: local("PlayfairDisplay-Black"), url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Black.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "OpenSans", "Helvetica Neue", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-reset {
+  display: grid;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  margin: 0;
+  padding: 17px 33px;
+  border: 2px solid #A65CF0;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #A65CF0;
+  transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
+}
+.btn:focus {
+  color: #fff;
+  background-color: #C998FB;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #A65CF0;
+}
+.btn:active {
+  color: #fff;
+  background-color: #7033AC;
+  border-color: #7033AC;
+}
+
+.btn.btn-blue {
+  color: #fff;
+  background-color: #A65CF0;
+}
+.btn.btn-blue:focus {
+  background-color: #C998FB;
+  border-color: #7033AC;
+}
+.btn.btn-blue:hover {
+  background-color: #C998FB;
+  border-color: #C998FB;
+}
+.btn.btn-blue:active {
+  background-color: #7033AC;
+  border-color: #7033AC;
+}
+.btn.btn-blue:disabled {
+  background-color: #EAEAEA;
+  border-color: #EAEAEA;
+  color: grey;
+}
+
+.input {
+  border: none;
+  padding-left: 18px;
+  height: 53px;
+  border-radius: 10px;
+  background: #F7F7F7;
+  transition: color 0.3s linear, outline 0.3s linear;
+  color: #333333;
+}
+.input::-moz-placeholder {
+  color: #999999;
+}
+.input::placeholder {
+  color: #999999;
+}
+.input:focus {
+  outline: none;
+  background: #F8EFFF;
+  border: 1px solid #A65CF0;
+}
+.input:hover {
+  background: #EAEAEA;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 26px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  color: #333333;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  padding: 30px;
+  background: #F7F7F7;
+  border: none;
+  border-radius: 10px;
+}
+
+.sub-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  color: #333333;
+}
+
+.arrow-btn svg path {
+  transition: fill 0.3s linear, stroke 0.3s linear;
+  stroke: #A65CF0;
+  fill: transparent;
+}
+.arrow-btn svg circle {
+  transition: fill 0.3s linear, stroke 0.3s linear;
+  fill: transparent;
+  stroke: #A65CF0;
+}
+.arrow-btn:focus {
+  outline: none;
+}
+.arrow-btn:focus svg path {
+  stroke: #fff;
+  fill: transparent;
+}
+.arrow-btn:focus svg circle {
+  fill: #C998FB;
+  stroke: #A65CF0;
+}
+.arrow-btn:hover svg path {
+  stroke: #fff;
+  fill: transparent;
+}
+.arrow-btn:hover svg circle {
+  fill: #A65CF0;
+  stroke: #A65CF0;
+}
+.arrow-btn:active svg path {
+  stroke: #fff;
+  fill: transparent;
+}
+.arrow-btn:active svg circle {
+  fill: #7033AC;
+  stroke: #7033AC;
+}/*# sourceMappingURL=settings.css.map */

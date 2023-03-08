@@ -1,0 +1,79 @@
+.usefull {
+    margin-bottom: 70px;
+
+    .container {
+        position: relative;
+        overflow: hidden;
+        gap: 32px;
+    }
+
+    .card {
+        box-sizing: border-box;
+        width: 624px;
+        // min-height: 676px;
+        padding: 0;
+
+        &__img {
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        &__bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            min-height: 250px;
+            padding: 30px;
+        }
+
+        &__text {
+            margin-bottom: auto;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 33px;
+
+            /* black */
+
+            color: #333333;
+        }
+    }
+
+
+    .swiper-button {
+
+        &-next {
+            top: 16px;
+            right: 3px;
+
+
+            svg {
+                position: absolute;
+                width: 32px;
+                height: 32px;
+            }
+
+            &::after {
+                color: transparent;
+            }
+        }
+
+        &-prev {
+            top: 16px;
+            right: 48px;
+            left: unset;
+
+            svg {
+                position: absolute;
+                width: 32px;
+                height: 32px;
+                transform: rotate(180deg);
+            }
+
+
+            &::after {
+                color: transparent;
+            }
+        }
+    }
+}

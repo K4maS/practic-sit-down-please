@@ -1,0 +1,47 @@
+.highrait {
+  margin-bottom: 70px;
+}
+.highrait__list {
+  display: grid;
+  margin-bottom: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.highrait .card {
+  min-height: 420px;
+}
+.highrait .card, .highrait .card::before, .highrait .card::after {
+  box-sizing: border-box;
+}
+.highrait .card__star {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FF862F;
+}
+.highrait .card__img {
+  align-self: center;
+  transform: scale(1.1);
+  margin-bottom: 16px;
+}
+.highrait .card__title {
+  margin-bottom: 22px;
+}
+.highrait .card__price {
+  margin-bottom: 24px;
+}
+.highrait__btn-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.highrait__btn {
+  background: #A65CF0;
+  color: #FFFFFF;
+  padding: 20px 35px;
+}/*# sourceMappingURL=highrait.css.map */

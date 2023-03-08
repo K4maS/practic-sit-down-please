@@ -1,0 +1,359 @@
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Regular"), url("../fonts/OpenSansRegular.woff2") format("woff2"), url("../fonts/OpenSansRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-SemiBold"), url("../fonts/OpenSansSemiBold.woff2") format("woff2"), url("../fonts/OpenSansSemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Bold"), url("../fonts/OpenSansBold.woff2") format("woff2"), url("../fonts/OpenSansBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: local("PlayfairDisplay-Black"), url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Black.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "OpenSans", "Helvetica Neue", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-reset {
+  display: grid;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  margin: 0;
+  padding: 17px 33px;
+  border: 2px solid #A65CF0;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #A65CF0;
+  transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
+}
+.btn:focus {
+  color: #fff;
+  background-color: #C998FB;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #A65CF0;
+}
+.btn:active {
+  color: #fff;
+  background-color: #7033AC;
+  border-color: #7033AC;
+}
+
+.btn.btn-blue {
+  color: #fff;
+  background-color: #A65CF0;
+}
+.btn.btn-blue:focus {
+  background-color: #C998FB;
+  border-color: #7033AC;
+}
+.btn.btn-blue:hover {
+  background-color: #C998FB;
+  border-color: #C998FB;
+}
+.btn.btn-blue:active {
+  background-color: #7033AC;
+  border-color: #7033AC;
+}
+.btn.btn-blue:disabled {
+  background-color: #EAEAEA;
+  border-color: #EAEAEA;
+  color: grey;
+}
+
+.input {
+  border: none;
+  padding-left: 18px;
+  height: 53px;
+  border-radius: 10px;
+  background: #F7F7F7;
+  transition: color 0.3s linear, outline 0.3s linear;
+  color: #333333;
+}
+.input::-moz-placeholder {
+  color: #999999;
+}
+.input::placeholder {
+  color: #999999;
+}
+.input:focus {
+  outline: none;
+  background: #F8EFFF;
+  border: 1px solid #A65CF0;
+}
+.input:hover {
+  background: #EAEAEA;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 26px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  color: #333333;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+  padding: 30px;
+  background: #F7F7F7;
+  border: none;
+  border-radius: 10px;
+}
+
+.sub-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  color: #333333;
+}
+
+.arrow-btn svg path {
+  transition: fill 0.3s linear, stroke 0.3s linear;
+  stroke: #A65CF0;
+  fill: transparent;
+}
+.arrow-btn svg circle {
+  transition: fill 0.3s linear, stroke 0.3s linear;
+  fill: transparent;
+  stroke: #A65CF0;
+}
+.arrow-btn:focus {
+  outline: none;
+}
+.arrow-btn:focus svg path {
+  stroke: #fff;
+  fill: transparent;
+}
+.arrow-btn:focus svg circle {
+  fill: #C998FB;
+  stroke: #A65CF0;
+}
+.arrow-btn:hover svg path {
+  stroke: #fff;
+  fill: transparent;
+}
+.arrow-btn:hover svg circle {
+  fill: #A65CF0;
+  stroke: #A65CF0;
+}
+.arrow-btn:active svg path {
+  stroke: #fff;
+  fill: transparent;
+}
+.arrow-btn:active svg circle {
+  fill: #7033AC;
+  stroke: #7033AC;
+}
+
+.contacts {
+  margin-bottom: 65px;
+}
+.contacts .container {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contacts .form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contacts__right {
+  display: flex;
+  align-items: center;
+}
+.contacts__title.title {
+  margin: 0;
+  margin-bottom: 3px;
+}
+.contacts__textplace {
+  margin-bottom: 16px;
+}
+.contacts__text {
+  margin: 0;
+  display: inline;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #666666;
+}
+.contacts .tltip {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  margin-left: 4px;
+}
+.contacts .tltip-trigger {
+  width: 14px;
+}
+.contacts .tltip-trigger svg {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  fill: #FF862F;
+  border-radius: 100%;
+  border: 1px solid #FF862F;
+  transition: border 0.3s linear, border-radius 0.1s linear, background-color 0.3s linear, fill 0.3s linear;
+}
+.contacts .tltip-trigger:hover .tltip-body {
+  display: block;
+}
+.contacts .tltip-trigger:hover svg {
+  fill: #FFF;
+  background: #FF862F;
+}
+.contacts .tltip-body {
+  display: none;
+  z-index: 120;
+  padding: 5px;
+  position: absolute;
+  top: -59px;
+  left: -69px;
+  width: 157px;
+  background: #333;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.contacts .tltip-sqr {
+  z-index: 1;
+  width: 12px;
+  height: 12px;
+  bottom: -6px;
+  left: 70px;
+  transform: rotate(45deg);
+  position: absolute;
+  background: #333;
+}
+.contacts .form__label {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.contacts .form__input {
+  width: 100%;
+}
+.contacts .form__btn {
+  margin-bottom: 12px;
+  color: #FFFFFF;
+  background: #A65CF0;
+}
+.contacts .form__check {
+  display: flex;
+}
+.contacts .form__label-check {
+  position: relative;
+  padding-left: 22px;
+}
+.contacts .form__checkbox {
+  display: none;
+}
+.contacts .form__checkbox + span {
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  top: 3.5px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #999999;
+  border-radius: 1px;
+}
+.contacts .form__checkbox + span::before {
+  z-index: -1;
+  content: url("./img/chekbox.svg");
+  position: absolute;
+  bottom: -7px;
+  left: -1px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.contacts .form__checkbox:checked + span::before {
+  opacity: 1;
+}
+.contacts .form__link {
+  color: #A65CF0;
+  text-decoration: underline;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s linear, background-color 0.3s linear;
+}
+.contacts .form__link:focus {
+  color: #7033AC;
+  outline: none;
+}
+.contacts .form__link:hover {
+  color: #C998FB;
+}
+.contacts .form__link:active {
+  color: #7033AC;
+}/*# sourceMappingURL=contacts.css.map */
