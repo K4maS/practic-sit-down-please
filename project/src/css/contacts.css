@@ -41,6 +41,17 @@ body {
   font-family: "OpenSans", "Helvetica Neue", sans-serif;
 }
 
+.main-catalog .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.main-catalog .aside {
+  grid-column: 1 span;
+}
+.main-catalog .catalog {
+  grid-column: 3 span;
+}
+
 img {
   max-width: 100%;
 }
@@ -111,6 +122,18 @@ ul {
   background-color: #EAEAEA;
   border-color: #EAEAEA;
   color: grey;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .input {
@@ -209,6 +232,53 @@ ul {
 .arrow-btn:active svg circle {
   fill: #7033AC;
   stroke: #7033AC;
+}
+
+.breadcrumb {
+  margin-bottom: 32px !important;
+  display: flex;
+  gap: 3px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #999999;
+  margin: 0;
+}
+.breadcrumb__item {
+  position: relative;
+}
+.breadcrumb__item:last-child {
+  margin-right: 3px;
+  color: #7033AC;
+}
+.breadcrumb__link {
+  transition: color 0.3s linear, background-color 0.3s linear;
+}
+.breadcrumb__link::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background-color: #7033AC;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.breadcrumb__link:focus {
+  color: #7033AC;
+  outline: none;
+}
+.breadcrumb__link:focus::after {
+  opacity: 0.2;
+}
+.breadcrumb__link:hover {
+  color: #C998FB;
+}
+.breadcrumb__link:active {
+  color: #7033AC;
 }
 
 .contacts {

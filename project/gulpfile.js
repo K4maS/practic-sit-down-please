@@ -100,6 +100,7 @@ const html = () => {
 
 const scripts = () => {
   return src([
+    'src/js/libs/**/*.js',
     'src/js/main.js'
   ])
     .pipe(sourcemaps.init())
@@ -142,6 +143,7 @@ const htmlProd = () => {
 
 const scriptsProd = () => {
   return src([
+    'src/js/libs/**/*.js',
     'src/js/main.js'
   ])
 
@@ -158,9 +160,9 @@ const scriptsProd = () => {
     .pipe(browserSync.stream())
 }
 
-watch('src/**/*.html', htmlProd)
-watch('src/css/**/*.css', stylesProd)
-watch('src/js/**/*.js', scriptsProd)
+// watch('src/**/*.html', htmlProd)
+// watch('src/css/**/*.css', stylesProd)
+// watch('src/js/**/*.js', scriptsProd)
 
 
 

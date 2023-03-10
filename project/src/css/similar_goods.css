@@ -281,23 +281,72 @@ input[type=number] {
   color: #7033AC;
 }
 
-.form__label {
+.similar-goods {
+  margin-bottom: 70px;
+}
+.similar-goods .container {
   position: relative;
 }
-.form .just-validate-success-field {
-  border-color: #B8EC64 !important;
-}
-.form .just-validate-error-field {
-  border-color: #FF6972 !important;
-}
-.form .just-validate-error-label {
-  position: absolute;
-  top: -19px;
-  left: 18px;
+.similar-goods__title.title {
+  margin-bottom: 24px;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  /* red_input */
-  color: #FF6972 !important;
-}/*# sourceMappingURL=settings.css.map */
+  font-size: 24px;
+  line-height: 130%;
+  color: #333333;
+}
+.similar-goods .swiper-button-next {
+  top: 16px;
+  right: 3px;
+}
+.similar-goods .swiper-button-next svg {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+}
+.similar-goods .swiper-button-next::after {
+  color: transparent;
+}
+.similar-goods .swiper-button-prev {
+  top: 16px;
+  right: 48px;
+  left: unset;
+}
+.similar-goods .swiper-button-prev svg {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  transform: rotate(180deg);
+}
+.similar-goods .swiper-button-prev::after {
+  color: transparent;
+}
+.similar-goods .card {
+  min-height: 420px;
+  width: 296px;
+}
+.similar-goods .card, .similar-goods .card::before, .similar-goods .card::after {
+  box-sizing: border-box;
+}
+.similar-goods .card__star {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #FF862F;
+}
+.similar-goods .card__img {
+  align-self: center;
+  transform: scale(1.1);
+  margin-bottom: 16px;
+}
+.similar-goods .card__title {
+  margin-bottom: 22px;
+}
+.similar-goods .card__price {
+  margin-bottom: 24px;
+}/*# sourceMappingURL=similar_goods.css.map */
