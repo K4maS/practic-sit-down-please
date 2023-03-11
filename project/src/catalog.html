@@ -43,6 +43,11 @@
 
     <header class="header">
 
+        <div class="header__logo-mobile">
+            <a href="index.html" class="header__link">
+                <img src="./img/logo.svg" alt="logo" class="header__logo">
+            </a>
+        </div>
         <div class="header__top top">
             <div class="container">
                 <div class="header__location ">
@@ -87,14 +92,67 @@
                 </nav>
             </div>
         </div>
+        <div class="header__center center">
+            <div class="container">
+                <nav class="header__service service">
+                    <ul class="service__list">
+                        <li class="service__item item">
+                            <a href="#" class="item__link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="service__item item">
+                            <a href="#" class="item__link">
+                                Гарантия и возврат
+                            </a>
+                        </li>
+                        <li class="service__item item">
+                            <a href="#" class="item__link">
+                                Корпоративным клиентам
+                            </a>
+                        </li>
+                        <li class="service__item item">
+                            <a href="#" class="item__link">
+                                Дизайн-решение
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="header__right-block">
+                    <div class="header__cabinet">
+
+                        <a href="#" class="header__link">
+                            <svg>
+                                <use xlink:href="./img/svg/sprite.svg#user"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__bascet">
+                        <a href="#" class="header__link">
+                            <svg>
+                                <use xlink:href="./img/svg/sprite.svg#cart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="header__bottom">
                 <div class="header__links">
+                    <!-- burger--active -->
+                    <button class=" btn-reset header__burger burger">
+                        <span class="burger__line"> </span>
+                        <span class="burger__line"> </span>
+                        <span class="burger__line"></span>
+                    </button>
                     <div class="header__logo-link">
-                        <a href="./index.html" class="header__link">
+                        <a href="index.html" class="header__link">
                             <img src="./img/logo.svg" alt="logo" class="header__logo">
                         </a>
                     </div>
+                    <!-- nav--active -->
                     <div class="header__nav nav">
 
                         <ul class="nav__list">
@@ -131,6 +189,23 @@
 
                         </ul>
                     </div>
+                    <div class="header__right-block">
+                        <div class="header__cabinet">
+
+                            <a href="#" class="header__link">
+                                <svg>
+                                    <use xlink:href="./img/svg/sprite.svg#user"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header__bascet">
+                            <a href="#" class="header__link">
+                                <svg>
+                                    <use xlink:href="./img/svg/sprite.svg#cart"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="header__action">
                     <div class="header__search input-group search">
@@ -141,13 +216,13 @@
                         </button> <button class="btn-reset search__btn-right arrow-btn">
 
                             <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_663_1730)">
+                                <g clip-path="url(.clip0_663_1730)">
                                     <circle cx="16" cy="16" r="15" stroke-width="2" />
                                     <path d="M14 11L19 16L14 21" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </g>
                                 <defs>
-                                    <clipPath id="clip0_663_1730">
+                                    <clipPath class="clip0_663_1730">
                                         <rect width="32" height="32" fill="white" />
                                     </clipPath>
                                 </defs>
@@ -158,6 +233,7 @@
                         <input class="search__pool" placeholder="Я хочу купить..." type="search">
 
                         <select class="search__dropdown" name="categories" id="select-2">
+                            <option value="Категория">Категория</option>
                             <option value="Диваны">Диваны</option>
                             <option value="Кресла">Кресла</option>
                             <option value="Пуфы">Пуфы</option>
@@ -201,8 +277,8 @@
             <aside class="aside">
 
                 <ul class="aside__breadcrumb breadcrumb">
-                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Главная /</a></li>
-                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Каталог /</a></li>
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="./index.html">Главная /</a></li>
+                    <li class="breadcrumb__item"><a class="breadcrumb__link" href="./catalog.html">Каталог /</a></li>
                     <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Диваны /</a></li>
                     <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Прямые диваны</a></li>
                 </ul>
@@ -942,7 +1018,7 @@
             <div class="container">
                 <div class="footer__left">
                     <div class="footer__logo-link">
-                        <a href="./index.html" class="footer__link">
+                        <a href="index.html" class="footer__link">
                             <img src="./img/logo.svg" alt="logo" class="footer__logo">
                         </a>
                     </div>

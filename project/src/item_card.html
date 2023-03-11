@@ -40,158 +40,233 @@
   <!-- header -->
   <header class="header">
 
-
+    <div class="header__logo-mobile">
+        <a href="index.html" class="header__link">
+            <img src="./img/logo.svg" alt="logo" class="header__logo">
+        </a>
+    </div>
     <div class="header__top top">
-      <div class="container">
-        <div class="header__location ">
-          <p class="header__text">Ваш регион:</p>
-          <select class="header__select" name="location" id="select">
-            <option value="Москва" selected>Москва</option>
-            <option value="Казань">Казань</option>
-            <option value="Уфа">Уфа</option>
-            <option value="Пермь">Пермь</option>
-          </select>
-        </div>
-        <div class="header__contact">
-          <a href="tel:+74958854547" class="header__phone"><svg>
+        <div class="container">
+            <div class="header__location ">
+                <p class="header__text">Ваш регион:</p>
+                <select class="header__select" name="location" id="select">
+                    <option value="Москва" selected>Москва</option>
+                    <option value="Казань">Казань</option>
+                    <option value="Уфа">Уфа</option>
+                    <option value="Пермь">Пермь</option>
+                </select>
+            </div>
+            <div class="header__contact">
+                <a href="tel:+74958854547" class="header__phone"><svg>
 
-              <use xlink:href="./img/svg/sprite.svg#phone"></use>
-            </svg> +7 (495) 885-45-47</a>
-        </div>
-        <nav class="header__service service">
-          <ul class="service__list">
-            <li class="service__item item">
-              <a href="#" class="item__link">
-                О компании
-              </a>
-            </li>
-            <li class="service__item item">
-              <a href="#" class="item__link">
-                Гарантия и возврат
-              </a>
-            </li>
-            <li class="service__item item">
-              <a href="#" class="item__link">
-                Корпоративным клиентам
-              </a>
-            </li>
-            <li class="service__item item">
-              <a href="#" class="item__link">
-                Дизайн-решение
-              </a>
-            </li>
+                        <use xlink:href="./img/svg/sprite.svg#phone"></use>
+                    </svg> +7 (495) 885-45-47</a>
+            </div>
+            <nav class="header__service service">
+                <ul class="service__list">
+                    <li class="service__item item">
+                        <a href="#" class="item__link">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="service__item item">
+                        <a href="#" class="item__link">
+                            Гарантия и возврат
+                        </a>
+                    </li>
+                    <li class="service__item item">
+                        <a href="#" class="item__link">
+                            Корпоративным клиентам
+                        </a>
+                    </li>
+                    <li class="service__item item">
+                        <a href="#" class="item__link">
+                            Дизайн-решение
+                        </a>
+                    </li>
 
-          </ul>
-        </nav>
-      </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="header__center center">
+        <div class="container">
+            <nav class="header__service service">
+                <ul class="service__list">
+                    <li class="service__item item">
+                        <a href="#" class="item__link">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="service__item item">
+                        <a href="#" class="item__link">
+                            Гарантия и возврат
+                        </a>
+                    </li>
+                    <li class="service__item item">
+                        <a href="#" class="item__link">
+                            Корпоративным клиентам
+                        </a>
+                    </li>
+                    <li class="service__item item">
+                        <a href="#" class="item__link">
+                            Дизайн-решение
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="header__right-block">
+                <div class="header__cabinet">
+
+                    <a href="#" class="header__link">
+                        <svg>
+                            <use xlink:href="./img/svg/sprite.svg#user"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__bascet">
+                    <a href="#" class="header__link">
+                        <svg>
+                            <use xlink:href="./img/svg/sprite.svg#cart"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container">
-      <div class="header__bottom">
-        <div class="header__links">
-          <div class="header__logo-link">
-            <a href="index.html" class="header__link">
-              <img src="./img/logo.svg" alt="logo" class="header__logo">
-            </a>
-          </div>
-          <div class="header__nav nav">
+        <div class="header__bottom">
+            <div class="header__links">
+                <!-- burger--active -->
+                <button class=" btn-reset header__burger burger">
+                    <span class="burger__line"> </span>
+                    <span class="burger__line"> </span>
+                    <span class="burger__line"></span>
+                </button>
+                <div class="header__logo-link">
+                    <a href="index.html" class="header__link">
+                        <img src="./img/logo.svg" alt="logo" class="header__logo">
+                    </a>
+                </div>
+                <!-- nav--active -->
+                <div class="header__nav nav">
 
-            <ul class="nav__list">
-              <li class="nav__item item">
-                <a href="#" class="item__link">
-                  Каталог
-                </a>
-              </li>
-              <li class="nav__item item">
-                <a href="#" class="item__link">
-                  Магазины
-                </a>
-              </li>
-              <li class="nav__item item">
-                <a href="#" class="item__link">
-                  Шоу-рум
-                </a>
-              </li>
-              <li class="nav__item item">
-                <a href="#" class="item__link">
-                  Доставка и оплата
-                </a>
-              </li>
-              <li class="nav__item item">
-                <a href="#" class="item__link">
-                  Дисконт
-                </a>
-              </li>
-              <li class="nav__item item">
-                <a href="#" class="item__link">
-                  Контакты
-                </a>
-              </li>
+                    <ul class="nav__list">
+                        <li class="nav__item item">
+                            <a href="#" class="item__link">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="nav__item item">
+                            <a href="#" class="item__link">
+                                Магазины
+                            </a>
+                        </li>
+                        <li class="nav__item item">
+                            <a href="#" class="item__link">
+                                Шоу-рум
+                            </a>
+                        </li>
+                        <li class="nav__item item">
+                            <a href="#" class="item__link">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="nav__item item">
+                            <a href="#" class="item__link">
+                                Дисконт
+                            </a>
+                        </li>
+                        <li class="nav__item item">
+                            <a href="#" class="item__link">
+                                Контакты
+                            </a>
+                        </li>
 
-            </ul>
-          </div>
-        </div>
-        <div class="header__action">
-          <div class="header__search input-group search">
-            <button class="btn-reset search__btn-left">
-              <svg>
-                <use xlink:href="./img/svg/sprite.svg#search"></use>
-              </svg>
-            </button> <button class="btn-reset search__btn-right arrow-btn">
+                    </ul>
+                </div>
+                <div class="header__right-block">
+                    <div class="header__cabinet">
 
-              <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(.clip0_663_1730)">
-                  <circle cx="16" cy="16" r="15" stroke-width="2" />
-                  <path d="M14 11L19 16L14 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </g>
-                <defs>
-                  <clipPath class="clip0_663_1730">
-                    <rect width="32" height="32" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-
-
-            </button>
-            <input class="search__pool" placeholder="Я хочу купить..." type="search">
-
-            <select class="search__dropdown" name="categories" id="select-2">
-              <option value="Категория">Категория</option>
-              <option value="Диваны">Диваны</option>
-              <option value="Кресла">Кресла</option>
-              <option value="Пуфы">Пуфы</option>
-              <option value="Кровати">Кровати</option>
-              <option value="Тумбы">Тумбы</option>
-              <option value="Комоды">Комоды</option>
-              <option value="Стулья">Стулья</option>
-              <option value="Столы">Столы</option>
-              <option value="Аксесуары">Аксесуары</option>
-            </select>
-          </div>
-          <div class="header__right-block">
-            <div class="header__cabinet">
-              <a href="#" class="header__link">
-                <svg>
-                  <use xlink:href="./img/svg/sprite.svg#user"></use>
-                </svg>
-              </a>
+                        <a href="#" class="header__link">
+                            <svg>
+                                <use xlink:href="./img/svg/sprite.svg#user"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__bascet">
+                        <a href="#" class="header__link">
+                            <svg>
+                                <use xlink:href="./img/svg/sprite.svg#cart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="header__bascet">
-              <a href="#" class="header__link">
-                <svg>
-                  <use xlink:href="./img/svg/sprite.svg#cart"></use>
-                </svg>
-              </a>
+            <div class="header__action">
+                <div class="header__search input-group search">
+                    <button class="btn-reset search__btn-left">
+                        <svg>
+                            <use xlink:href="./img/svg/sprite.svg#search"></use>
+                        </svg>
+                    </button> <button class="btn-reset search__btn-right arrow-btn">
+
+                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(.clip0_663_1730)">
+                                <circle cx="16" cy="16" r="15" stroke-width="2" />
+                                <path d="M14 11L19 16L14 21" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath class="clip0_663_1730">
+                                    <rect width="32" height="32" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+
+                    </button>
+                    <input class="search__pool" placeholder="Я хочу купить..." type="search">
+
+                    <select class="search__dropdown" name="categories" id="select-2">
+                        <option value="Категория">Категория</option>
+                        <option value="Диваны">Диваны</option>
+                        <option value="Кресла">Кресла</option>
+                        <option value="Пуфы">Пуфы</option>
+                        <option value="Кровати">Кровати</option>
+                        <option value="Тумбы">Тумбы</option>
+                        <option value="Комоды">Комоды</option>
+                        <option value="Стулья">Стулья</option>
+                        <option value="Столы">Столы</option>
+                        <option value="Аксесуары">Аксесуары</option>
+                    </select>
+                </div>
+                <div class="header__right-block">
+                    <div class="header__cabinet">
+                        <a href="#" class="header__link">
+                            <svg>
+                                <use xlink:href="./img/svg/sprite.svg#user"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__bascet">
+                        <a href="#" class="header__link">
+                            <svg>
+                                <use xlink:href="./img/svg/sprite.svg#cart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
+
+
+
+
         </div>
-
-
-
-
-      </div>
     </div>
 
-  </header>
+</header>
 
 
   <main class="main">
@@ -200,8 +275,8 @@
     <section class="good">
       <div class="container">
         <ul class="good__breadcrumb breadcrumb">
-          <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Главная / </a></li>
-          <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Каталог / </a></li>
+          <li class="breadcrumb__item"><a class="breadcrumb__link" href="./index.html">Главная / </a></li>
+          <li class="breadcrumb__item"><a class="breadcrumb__link" href="./catalog.html">Каталог / </a></li>
           <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Диваны / </a></li>
           <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Прямые диваны / </a></li>
           <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">D-31</a></li>
@@ -758,7 +833,7 @@
     <section class="window">
       <div class="window__blackout blackout">
         <div class="container">
-          <div class="window__main-block main-block">
+          <div ref="content" class="window__main-block main-block">
             <button class="btn-reset main-block__close-btn">
               <svg>
                 <use xlink:href="./img/svg/sprite.svg#close-cross"></use>
@@ -870,134 +945,134 @@
   <!-- footer -->
   <footer class="footer">
     <div class="footer__top">
-      <div class="container">
-        <div class="footer__left">
-          <div class="footer__logo-link">
-            <a href="index.html" class="footer__link">
-              <img src="./img/logo.svg" alt="logo" class="footer__logo">
-            </a>
-          </div>
+        <div class="container">
+            <div class="footer__left">
+                <div class="footer__logo-link">
+                    <a href="index.html" class="footer__link">
+                        <img src="./img/logo.svg" alt="logo" class="footer__logo">
+                    </a>
+                </div>
 
-          <div class="footer__social social">
-            <ul class="social__list">
-              <li class="social__item item">
-                <a href="#" class="item__link">
-                  <svg>
-                    <use xlink:href="./img/svg/sprite.svg#fb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item item">
-                <a href="#" class="item__link">
-                  <svg>
-                    <use xlink:href="./img/svg/sprite.svg#vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social__item item">
-                <a href="#" class="item__link">
-                  <svg>
-                    <use xlink:href="./img/svg/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+                <div class="footer__social social">
+                    <ul class="social__list">
+                        <li class="social__item item">
+                            <a href="#" class="item__link">
+                                <svg>
+                                    <use xlink:href="./img/svg/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item item">
+                            <a href="#" class="item__link">
+                                <svg>
+                                    <use xlink:href="./img/svg/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item item">
+                            <a href="#" class="item__link">
+                                <svg>
+                                    <use xlink:href="./img/svg/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right right">
+                <ul class="right__list">
+                    <li class="right__item">
+                        <h2 class="item__title">
+                            <!-- title -->
+                            О нас
+                        </h2>
+                        <ul class="item__list">
+                            <li class="item__item">
+                                <a href="" class="item__link">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="item__item">
+                                <a href="" class="item__link">
+                                    Блог
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="right__item">
+                        <h2 class="item__title">
+                            <!-- title -->
+                            Услуги
+                        </h2>
+                        <ul class="item__list">
+                            <li class="item__item">
+                                <a href="" class="item__link">
+                                    Доставка
+                                </a>
+                            </li>
+                            <li class="item__item">
+                                <a href="" class="item__link">
+                                    Рассрочка и кредит
+                                </a>
+                            </li>
+                            <li class="item__item">
+                                <a href="" class="item__link">
+                                    Сборка и установка
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="right__item">
+                        <h2 class="item__title">
+                            <!-- title -->Связь с нами
+                        </h2>
+                        <ul class="item__list">
+                            <li class="item__item">
+                                <a href="#" class="item__link">
+                                    Обратная связь
+                                </a>
+                            </li>
+                            <li class="item__item">
+                                <a href="#" class="item__link">
+                                    Контакты
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="right__item">
+                        <h2 class="item__title">
+                            <!-- title -->Сотрудничество
+                        </h2>
+                        <ul class="item__list">
+                            <li class="item__item">
+                                <a href="./cooperation.html" class="item__link">
+                                    Поставщикам
+                                </a>
+                            </li>
+                            <li class="item__item">
+                                <a href="#" class="item__link">
+                                    Оптовикам
+                                </a>
+                            </li>
+                            <li class="item__item">
+                                <a href="#" class="item__link">
+                                    Карьера
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
         </div>
-        <div class="footer__right right">
-          <ul class="right__list">
-            <li class="right__item">
-              <h2 class="item__title">
-                <!-- title -->
-                О нас
-              </h2>
-              <ul class="item__list">
-                <li class="item__item">
-                  <a href="" class="item__link">
-                    О компании
-                  </a>
-                </li>
-                <li class="item__item">
-                  <a href="" class="item__link">
-                    Блог
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="right__item">
-              <h2 class="item__title">
-                <!-- title -->
-                Услуги
-              </h2>
-              <ul class="item__list">
-                <li class="item__item">
-                  <a href="" class="item__link">
-                    Доставка
-                  </a>
-                </li>
-                <li class="item__item">
-                  <a href="" class="item__link">
-                    Рассрочка и кредит
-                  </a>
-                </li>
-                <li class="item__item">
-                  <a href="" class="item__link">
-                    Сборка и установка
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="right__item">
-              <h2 class="item__title">
-                <!-- title -->Связь с нами
-              </h2>
-              <ul class="item__list">
-                <li class="item__item">
-                  <a href="#" class="item__link">
-                    Обратная связь
-                  </a>
-                </li>
-                <li class="item__item">
-                  <a href="#" class="item__link">
-                    Контакты
-                  </a>
-                </li>
-
-              </ul>
-            </li>
-            <li class="right__item">
-              <h2 class="item__title">
-                <!-- title -->Сотрудничество
-              </h2>
-              <ul class="item__list">
-                <li class="item__item">
-                  <a href="./cooperation.html" class="item__link">
-                    Поставщикам
-                  </a>
-                </li>
-                <li class="item__item">
-                  <a href="#" class="item__link">
-                    Оптовикам
-                  </a>
-                </li>
-                <li class="item__item">
-                  <a href="#" class="item__link">
-                    Карьера
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-          </ul>
-        </div>
-      </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__rights">
-        SDP® 2011-2021
-      </p>
+        <p class="footer__rights">
+            SDP® 2011-2021
+        </p>
     </div>
-  </footer>
+</footer>
 
 
   <!-- scripts -->

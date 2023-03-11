@@ -1,0 +1,143 @@
+@import "../_vars";
+@import "../mixins";
+
+.cooperation {
+    margin-bottom: 70px;
+
+    .breadcrumb {
+        margin-bottom: 23px !important;
+    }
+
+    &__basic {
+        max-width: 843px;
+    }
+
+    .title {
+        margin-bottom: 32px;
+    }
+
+
+
+    .text-block {
+        &:not(:last-child) {
+            // margin-bottom: 30px;
+        }
+
+        margin-bottom: 30px;
+
+        p {
+            color: #666666;
+        }
+
+        ul,
+        ol {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+
+        &-get {
+            .item {
+                display: flex;
+                align-items: flex-start;
+                gap: 14px;
+
+                p.item__paragraph {
+                    max-width: 587px;
+                    line-height: 150%;
+                }
+
+            }
+        }
+
+        &-advantages {
+            .item {
+
+                &__title {
+                    margin-bottom: 12px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #FF862F;
+                }
+
+                &__paragraph {
+                    margin: 0;
+                    line-height: 180%;
+
+                }
+            }
+        }
+
+        &-garanties {
+            ol {
+                padding-left: 26px;
+            }
+
+            .item {
+                &__paragraph {
+                    max-width: 812px;
+                }
+
+                &::marker {
+                    position: relative;
+                    left: 1px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 180%;
+                    color: #FF862F;
+                }
+            }
+        }
+
+        .sub-title {
+            margin-bottom: 16px;
+        }
+
+        .item {
+            &__paragraph {
+                margin-bottom: 0;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 180%;
+                color: #666666;
+            }
+        }
+
+        &__paragraph {
+            margin-bottom: 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            color: #666666;
+
+        }
+    }
+
+    .garanty {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 32px;
+
+
+        &__text {
+            max-width: 515px;
+            margin: 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 150%;
+            color: #333333;
+        }
+    }
+
+    &__img {}
+
+
+}

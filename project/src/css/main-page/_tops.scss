@@ -1,0 +1,112 @@
+@import "../_vars";
+@import "../mixins";
+
+.tops {
+    margin-bottom: 70px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        // grid-template-rows: 511px 405px;
+        gap: 32px;
+    }
+
+    &__item {
+        &-big {
+            grid-column: 3 span;
+        }
+
+        &-small {
+            grid-column: 2 span;
+
+        }
+
+    }
+
+    .card {
+        min-height: 405px;
+
+        &__types {
+            margin-bottom: 14px;
+            display: flex;
+            gap: 30px;
+            width: 100%;
+
+            span {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 100%;
+                display: flex;
+                align-items: center;
+                color: #999999;
+
+            }
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__img {
+            margin-bottom: 30px;
+            margin-left: -15px;
+        }
+
+        &__link {
+            position: relative;
+            display: block;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 120%;
+            color: #A65CF0;
+            transition: color 0.3s linear;
+
+            &::before {
+                content: '';
+                position: absolute;
+                border: 2px solid #A65CF0;
+                bottom: 1px;
+                right: 175px;
+                left: 1px;
+                opacity: 0;
+                transition: opacity 0.3s linear, right 0.3s linear, border-color 0.3s linear;
+            }
+
+            &:focus {
+                outline: none;
+                color: #A65CF0;
+
+                &::before {
+                    opacity: 1;
+                    right: 27px;
+                }
+            }
+
+            &:hover {
+                color: #A65CF0;
+
+                &::before {
+                    opacity: 1;
+                    right: 27px;
+                }
+            }
+
+            &:active {
+                color: #7033AC;
+
+                &::before {
+                    border-color: #7033AC;
+                    opacity: 1;
+                    right: 27px;
+                }
+            }
+
+            svg {
+                height: 22px;
+                width: 22px;
+            }
+        }
+    }
+}

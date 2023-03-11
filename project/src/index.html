@@ -34,14 +34,18 @@
     <!-- green sock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <!-- main -->
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
 </head>
 
 <body>
     <!-- header -->
     <header class="header">
 
-
+        <div class="header__logo-mobile">
+            <a href="index.html" class="header__link">
+                <img src="./img/logo.svg" alt="logo" class="header__logo">
+            </a>
+        </div>
         <div class="header__top top">
             <div class="container">
                 <div class="header__location ">
@@ -86,14 +90,67 @@
                 </nav>
             </div>
         </div>
+        <div class="header__center center">
+            <div class="container">
+                <nav class="header__service service">
+                    <ul class="service__list">
+                        <li class="service__item item">
+                            <a href="#" class="item__link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="service__item item">
+                            <a href="#" class="item__link">
+                                Гарантия и возврат
+                            </a>
+                        </li>
+                        <li class="service__item item">
+                            <a href="#" class="item__link">
+                                Корпоративным клиентам
+                            </a>
+                        </li>
+                        <li class="service__item item">
+                            <a href="#" class="item__link">
+                                Дизайн-решение
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <div class="header__right-block">
+                    <div class="header__cabinet">
+
+                        <a href="#" class="header__link">
+                            <svg>
+                                <use xlink:href="./img/svg/sprite.svg#user"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__bascet">
+                        <a href="#" class="header__link">
+                            <svg>
+                                <use xlink:href="./img/svg/sprite.svg#cart"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="header__bottom">
                 <div class="header__links">
+                    <!-- burger--active -->
+                    <button class=" btn-reset header__burger burger">
+                        <span class="burger__line"> </span>
+                        <span class="burger__line"> </span>
+                        <span class="burger__line"></span>
+                    </button>
                     <div class="header__logo-link">
                         <a href="index.html" class="header__link">
                             <img src="./img/logo.svg" alt="logo" class="header__logo">
                         </a>
                     </div>
+                    <!-- nav--active -->
                     <div class="header__nav nav">
 
                         <ul class="nav__list">
@@ -129,6 +186,23 @@
                             </li>
 
                         </ul>
+                    </div>
+                    <div class="header__right-block">
+                        <div class="header__cabinet">
+
+                            <a href="#" class="header__link">
+                                <svg>
+                                    <use xlink:href="./img/svg/sprite.svg#user"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header__bascet">
+                            <a href="#" class="header__link">
+                                <svg>
+                                    <use xlink:href="./img/svg/sprite.svg#cart"></use>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="header__action">
@@ -685,8 +759,13 @@
                                 <h3 class="sub-title card__title">
                                     Диваны
                                 </h3>
-                                <img src="./img/tops__coach-1.png" alt="" class="card__img">
-                                <a href="./catalog.html" class="card__link arrow-btn">В каталог
+                                <picture class="card__img card-img-1">
+
+                                    <source media="(min-width:768px )" srcset="./img/tops__coach-1.png" sizes="">
+                                    <img src="./img/tops__coach-1-320.png" alt="" class="card__img">
+
+                                </picture>
+                                <a href="./catalog.html" class="card__link arrow-btn"><span>В каталог</span>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(.clip0_663_1822)">
@@ -714,9 +793,12 @@
 
                                     Кресла
                                 </h3>
-                                <img src="./img/tops__sessels.png" alt="" class="card__img">
-
-                                <a href="./catalog.html" class="card__link arrow-btn">В каталог
+                                <picture class="card__img">
+                                    <source media="(min-width:1439px )" srcset="./img/tops__sessels.png" sizes="">
+                                    <source media="(min-width:768px )" srcset="./img/tops__sessels-1024.png" sizes="">
+                                    <img src="./img/tops__sessels-320.png" alt="" class="card__img">
+                                </picture>
+                                <a href="./catalog.html" class="card__link arrow-btn"><span>В каталог</span>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(.clip0_663_1822)">
@@ -743,8 +825,12 @@
                                 <h3 class="sub-title card__title">
                                     Кровати
                                 </h3>
-                                <img src="./img/tops__bed.png" alt="" class="card__img">
-                                <a href="./catalog.html" class="card__link arrow-btn">В каталог
+                                <picture class="card__img">
+                                    <source media="(min-width:1439px )" srcset="./img/tops__bed.png" sizes="">
+                                    <source media="(min-width:768px )" srcset="./img/tops__bed-1024.png" sizes="">
+                                    <img src="./img/tops__bed-320.png" alt="" class="card__img">
+                                </picture>
+                                <a href="./catalog.html" class="card__link arrow-btn"><span>В каталог</span>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(.clip0_663_1822)">
@@ -773,8 +859,13 @@
                                 <h3 class="sub-title card__title">
                                     Тумбы и комоды
                                 </h3>
-                                <img src="./img/tops__closet.png" alt="" class="card__img">
-                                <a href="./catalog.html" class="card__link arrow-btn">В каталог
+                                <picture class="card__img">
+
+                                    <source media="(min-width:1439px )" srcset="./img/tops__closet.png" sizes="">
+                                    <source media="(min-width:768px )" srcset="./img/tops__closet-1024.png" sizes="">
+                                    <img src="./img/tops__closet-320.png" alt="" class="card__img">
+                                </picture>
+                                <a href="./catalog.html" class="card__link arrow-btn"><span>В каталог</span>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(.clip0_663_1822)">
@@ -803,8 +894,13 @@
                                 <h3 class="sub-title card__title">
                                     Стулья
                                 </h3>
-                                <img src="./img/tops__chairs.png" alt="" class="card__img">
-                                <a href="./catalog.html" class="card__link arrow-btn">В каталог
+                                <picture class="card__img">
+
+                                    <source media="(min-width:1439px )" srcset="./img/tops__chairs.png" sizes="">
+                                    <source media="(min-width:768px )" srcset="./img/tops__chairs-1024.png" sizes="">
+                                    <img src="./img/tops__chairs-320.png" alt="" class="card__img">
+                                </picture>
+                                <a href="./catalog.html" class="card__link arrow-btn"><span>В каталог</span>
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(.clip0_663_1822)">
@@ -1002,10 +1098,9 @@
                 </form>
                 <div class="contacts__right">
                     <picture class="contacts__img">
-                        <source media="(min-width: )" srcset="./img/interior.svg" sizes="">
                         <source media="(min-width:1024px )" srcset="./img/interior.svg" sizes="">
-                        <source media="(min-width:768px )" srcset="./img/interior.svg" sizes="">
-                        <img src="./img/interior.svg" alt="" srcset="">
+                        <source media="(min-width:768px )" srcset="./img/interior-768.svg" sizes="">
+                        <img src="./img/interior-768.svg" alt="" srcset="">
                     </picture>
                 </div>
             </div>
@@ -1215,26 +1310,71 @@
             // Optional parameters
             direction: 'horizontal',
             loop: false,
-            slidesPerView: 3,
-            slidesPerGroup: 3,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
             spaceBetween: 32,
+            passiveListeners: false,
             // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+
+                },
+                // when window width is >=  768px
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+                // when window width is >= 1439px
+                1439: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+            }
         });
         const swiper3 = new Swiper('.swiper-3', {
             // Optional parameters
             direction: 'horizontal',
             loop: false,
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 32,
             // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+
+                },
+                // when window width is >=  768px
+                768: {
+                    slidesPerView: 2,
+
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                },
+                // when window width is >= 1439px
+                1439: {
+                    slidesPerView: 2,
+                },
+            }
         });
     </script>
     <!-- dropdown -->
