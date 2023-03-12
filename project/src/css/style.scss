@@ -1,7 +1,7 @@
 @import "_vars";
-@import "mixins";
-@import "settings";
-@import "grid";
+@import "_mixins";
+@import "_settings";
+@import "_grid";
 
 @import "./common/_header";
 @import "./common/_footer";

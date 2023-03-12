@@ -33,7 +33,7 @@
     <!-- green sock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <!-- main -->
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
 </head>
 
 <body class="body">
@@ -540,22 +540,16 @@
                             <option value="Кровати">Кровати</option>
                         </select>
                         <select class="catalog__dropdown" name="filter" id="filter-2">
-                            <option value="Диваны">Диваны</option>
-                            <option value="Кресла">Кресла</option>
-                            <option value="Пуфы">Пуфы</option>
-                            <option value="Кровати">Кровати</option>
+                            <option value="Диваны">Цена</option>
+
                         </select>
                         <select class="catalog__dropdown" name="filter" id="filter-3">
-                            <option value="Диваны">Диваны</option>
-                            <option value="Кресла">Кресла</option>
-                            <option value="Пуфы">Пуфы</option>
-                            <option value="Кровати">Кровати</option>
+                            <option value="Диваны">Скида</option>
+
                         </select>
                         <select class="catalog__dropdown" name="filter" id="filter-4">
-                            <option value="Диваны">Диваны</option>
-                            <option value="Кресла">Кресла</option>
-                            <option value="Пуфы">Пуфы</option>
-                            <option value="Кровати">Кровати</option>
+                            <option value="Диваны">Цвет</option>
+
                         </select>
                     </div>
                 </div>
@@ -1153,8 +1147,8 @@
             // Optional parameters
             direction: 'horizontal',
             loop: false,
-            slidesPerView: 3,
-            slidesPerGroup: 3,
+            slidesPerView: 2,
+            slidesPerGroup: 2,
             spaceBetween: 32,
             // If we need pagination
             pagination: {
@@ -1164,6 +1158,30 @@
                 },
                 el: '.swiper-pagination',
             },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 16,
+                },
+                // when window width is >=  768px
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+                // when window width is >= 1439px
+                1439: {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                },
+            }
         });
 
     </script>

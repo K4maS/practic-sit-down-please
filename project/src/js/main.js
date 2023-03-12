@@ -103,7 +103,7 @@
             .to('.main-block', {
                 duration: 0.51,
                 opacity: 1,
-                y: 1,
+                y: 50,
             });
     })
 
