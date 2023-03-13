@@ -1127,37 +1127,38 @@
       // Optional parameters
       direction: 'horizontal',
       loop: false,
-      slidesPerView: 1,
-      spaceBetween: 32,
+      slidesPerView: 2,
+      slidesPerView: 2,
+      spaceBetween: 16,
       // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 1,
-                    slidesPerGroup: 1,
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
 
-                },
-                // when window width is >=  768px
-                768: {
-                    slidesPerView: 2,
-                    slidesPerGroup: 2,
-
-                },
-                // when window width is >= 1024px
-                1024: {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3,
-                },
-                // when window width is >= 1439px
-                1439: {
-                    slidesPerView: 4,
-                    slidesPerGroup: 4,
-                },
-            }
+        },
+        // when window width is >=  768px
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 32,
+        },
+        // when window width is >= 1024px
+        1024: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+        // when window width is >= 1439px
+        1439: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+        },
+      }
     });
   </script>
   <!-- dropdown -->

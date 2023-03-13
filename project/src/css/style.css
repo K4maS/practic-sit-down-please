@@ -2555,10 +2555,7 @@ input[type=number] {
   .highrait__list {
     grid-template-columns: repeat(3, 1fr);
   }
-  .highrait__item:last-child {
-    display: none;
-  }
-  .highrait__item:nth-last-child(2) {
+  .highrait__item:last-child, .highrait__item:nth-last-child(2) {
     display: none;
   }
   .tops .card {
@@ -2616,6 +2613,9 @@ input[type=number] {
   }
   .good .table__column {
     width: 193px;
+  }
+  .similar-goods .item:last-child, .similar-goods .item:nth-last-child(2) {
+    display: block;
   }
   .window__main-img {
     width: 100%;
@@ -3182,6 +3182,40 @@ input[type=number] {
   .good .table tr {
     display: flex;
     flex-direction: column;
+  }
+  .similar-goods .card {
+    padding: 16px;
+    min-height: 278px;
+    width: unset;
+  }
+  .similar-goods .card__star {
+    margin-bottom: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+  }
+  .similar-goods .card__star svg {
+    width: 13px;
+    height: 12px;
+  }
+  .similar-goods .card__img {
+    margin-bottom: 10px;
+    width: 108px;
+  }
+  .similar-goods .card__title {
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333333;
+  }
+  .similar-goods .card__price {
+    margin-bottom: 16px;
+  }
+  .similar-goods .card .btn {
+    padding: 10px 23px;
   }
   .window .form {
     width: 296px;
