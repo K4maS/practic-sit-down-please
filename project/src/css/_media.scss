@@ -264,9 +264,9 @@
             &-list {}
 
             &-item {
-                &:last-child {
-                    display: none;
-                }
+                // &:last-child {
+                //     display: none;
+                // }
             }
         }
     }
@@ -313,12 +313,12 @@
 
         .nav {
             background-color: #fff;
-
+            // border: #ddd 1px solid;
             padding: 70px 50px;
             z-index: 500;
             width: 320px;
             position: absolute;
-            top: 26px;
+            top: 0px;
             left: -40px;
             border-radius: 10px;
 
@@ -525,13 +525,13 @@
             &-list {}
 
             &-item {
-                &:last-child {
-                    display: none;
-                }
+                // &:last-child {
+                //     display: none;
+                // }
 
-                &:nth-last-child(2) {
-                    display: none;
-                }
+                // &:nth-last-child(2) {
+                //     display: none;
+                // }
             }
         }
     }
@@ -1147,6 +1147,7 @@
             padding: 16px;
             min-height: 278px;
             width: unset;
+
             &__star {
                 margin-bottom: auto;
                 font-style: normal;
@@ -1264,57 +1265,71 @@
             &-list {}
 
             &-item {
-                &:last-child {
-                    display: none;
+                img {
+                    height: 86px;
                 }
 
-                &:nth-last-child(2) {
-                    display: none;
-                }
+                // &:last-child {
+                //     display: none;
+                // }
 
-                &:nth-last-child(3) {
-                    display: none;
+                // &:nth-last-child(2) {
+                //     display: none;
+                // }
+
+                // &:nth-last-child(3) {
+                //     display: none;
+                // }
+            }
+        }
+
+        .swiper {
+            &-button {
+
+                &-next,
+                &-prev {
+                    bottom: 43px;
                 }
             }
         }
-    }
 
-    // cooperantion 
-    .cooperation {
-        .text-block {
-            &__title {
-                font-size: 16px;
-                line-height: 22px;
-                font-weight: 400;
-            }
+        // cooperantion 
+        .cooperation {
+            .text-block {
+                &__title {
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 400;
+                }
 
-            &__paragraph {
-                font-size: 14px;
-                line-height: 180%;
-            }
-
-            .item {
                 &__paragraph {
                     font-size: 14px;
+                    line-height: 180%;
                 }
 
-            }
+                .item {
+                    &__paragraph {
+                        font-size: 14px;
+                    }
 
-            &-advantages {
-                .text-block__title {
-                    font-size: 14px;
+                }
+
+                &-advantages {
+                    .text-block__title {
+                        font-size: 14px;
+                    }
                 }
             }
-        }
 
-        &__img {
-            height: 54px;
-            width: 36px;
-        }
+            &__img {
+                height: 54px;
+                width: 36px;
+            }
 
-        .garanty__text {
-            font-size: 16px;
-            line-height: 150%;
+            .garanty__text {
+                font-size: 16px;
+                line-height: 150%;
+            }
         }
     }
 }

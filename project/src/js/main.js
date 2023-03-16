@@ -32,7 +32,6 @@
                 open = !open
                 burgerBtn.classList.toggle('burger--active');
                 hederNav.classList.toggle('nav--active');
-                document.body.classList.toggle('stop-scroll');
             })
         } catch { }
         // окна   

@@ -63,23 +63,37 @@
 
             }
 
-            &:hover {
-                .tltip-body {
-                    display: block;
 
 
-                }
 
-                svg {
-                    fill: #FFF;
+        }
 
-                    background: #FF862F;
-                }
+        &:hover {
+            .tltip-body {
+                display: block;
+
+
+            }
+
+            svg {
+                fill: #FFF;
+
+                background: #FF862F;
             }
         }
 
-        &-body {
-            display: none;
+        &:focus {
+            outline: none;
+
+            svg {
+                fill: #FFF;
+
+                background: #FF862F;
+            }
+        }
+
+            &-body {
+                display: none;
             z-index: 120;
             padding: 5px;
             position: absolute;
