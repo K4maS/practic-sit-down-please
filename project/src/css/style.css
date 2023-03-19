@@ -1097,7 +1097,12 @@ input[type=number] {
   padding-left: 22px;
 }
 .contacts .form__checkbox {
-  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.contacts .form__checkbox:focus + span {
+  outline: 1px solid #7033AC;
 }
 .contacts .form__checkbox + span {
   cursor: pointer;
@@ -1938,7 +1943,12 @@ input[type=number] {
   padding-left: 32px;
 }
 .aside__list .item__checkbox {
-  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.aside__list .item__checkbox:focus + span {
+  outline: 1px solid #7033AC;
 }
 .aside__list .item__checkbox + span {
   cursor: pointer;
