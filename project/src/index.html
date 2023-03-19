@@ -33,6 +33,9 @@
 
     <!-- green sock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- tippy -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <!-- main -->
     <script defer src="app.js"></script>
 </head>
@@ -1059,8 +1062,8 @@
                             Безусловно, новая модель организационной деятельности в значительной степени обусловливает
                             важность
                             распределения внутренних резервов и ресурсов</p>
-                        <div tabindex="0" class="tltip">   
-                            <div class="tltip-trigger"> 
+                        <div tabindex="0" class="tltip">
+                            <div class="tltip-trigger" id="my-tooltip">
                                 <svg>
                                     <use xlink:href="./img/svg/sprite.svg#question"> </use>
                                 </svg>
@@ -1398,6 +1401,14 @@
         });
     </script>
 
+    <!-- tippy -->
+    <script>
+        // With the above scripts loaded, you can call `tippy()` with a CSS
+        // selector and a `content` prop:
+        tippy('#my-tooltip', {
+            content: ' Реплицированные с зарубежных источников, исследования формируют глобальную сеть.',
+        });
+    </script>
 
 
 </body>

@@ -1037,9 +1037,6 @@ input[type=number] {
   border: 1px solid #FF862F;
   transition: border 0.3s linear, border-radius 0.1s linear, background-color 0.3s linear, fill 0.3s linear;
 }
-.contacts .tltip:hover .tltip-body {
-  display: block;
-}
 .contacts .tltip:hover svg {
   fill: #FFF;
   background: #FF862F;
